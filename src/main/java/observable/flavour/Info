@@ -1,0 +1,10 @@
+// Info
+
+
+There are a few specialized flavors of Observable that are explicitly set up for one or no emissions:
+
+Single, Maybe, and Completable.
+
+These all follow the Observable closely and should be intuitive to use in your reactive coding workflow.
+You can create them in similar ways as the Observable (for example, they each have their own create() factory),
+but certain Observable operators may return them too.
