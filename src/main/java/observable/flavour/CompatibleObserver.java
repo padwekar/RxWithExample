@@ -1,6 +1,10 @@
 package observable.flavour;
 
 import io.reactivex.Completable;
+import io.reactivex.Observable;
+import operator.suppressing.Take;
+
+import java.util.concurrent.TimeUnit;
 
 public class CompatibleObserver {
 
@@ -9,7 +13,6 @@ public class CompatibleObserver {
          but it does have onError() and onComplete():
      */
     public static void main(String... args) {
-
         completeExampleOne();
 
     }
@@ -17,6 +20,12 @@ public class CompatibleObserver {
     //Simple calling on complete :)
     public static void completeExampleOne(){
         Completable.complete().subscribe(() -> System.out.println("Done"),Throwable::printStackTrace);
+    }
+
+    //Can be used for splash screen.
+    public static void completeExampleOnePointOne(){
+        Completable.complete().delay(5, TimeUnit.SECONDS).subscribe(() -> System.out.println("Done"),Throwable::printStackTrace);
+        Take.sleep(5000); //Splash Screen
     }
 
     //From Callable

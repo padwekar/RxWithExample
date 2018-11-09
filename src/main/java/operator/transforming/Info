@@ -1,0 +1,2 @@
+Transform operators transform the emission received from source operator into the specified form.
+Number of emission from the these operator will be same as the source operator.
