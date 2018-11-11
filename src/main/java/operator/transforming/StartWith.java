@@ -10,10 +10,10 @@ public class StartWith {
        StartWith : Is useful when you want to emit some initial value before the actual emission takes place.
     */
     public static void main(String... args) {
-        exStartWithTwo();
+        egStartWithTwo();
     }
 
-    private static void exStartWithOne() {
+    private static void egStartWithOne() {
         /*
             Here StartWith will append the title "Lottery Participants" before the list of participants.
         */
@@ -30,7 +30,7 @@ public class StartWith {
 
     }
 
-    private static void exStartWithTwo() {
+    private static void egStartWithTwo() {
         /*
             StartWith can also accepts an array if you want to emit multiple initial value before actual emission starts.
         */

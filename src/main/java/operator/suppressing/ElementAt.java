@@ -11,10 +11,10 @@ public class ElementAt {
        ElementAt : Is used to get a specific emission by index.
     */
     public static void main(String... args) {
-        exElementAtOne();
+        egElementAtOne();
     }
 
-    private static void exElementAtOne() {
+    private static void egElementAtOne() {
         /*
             Here ElementAt will get an element at any random position.
         */
@@ -37,7 +37,7 @@ public class ElementAt {
 
     }
 
-    private static void exElementAtTwo() {
+    private static void egElementAtTwo() {
         /*
             Here ElementAt
         */

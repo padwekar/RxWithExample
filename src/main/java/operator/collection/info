@@ -1,0 +1,2 @@
+Collection Operator will accumulate all the emission into list or map and emits the collection at once after all the emission is complete.
+Collection Operators are reducing operator. As it all aggregates the emission and consolidate the emissions into single one.

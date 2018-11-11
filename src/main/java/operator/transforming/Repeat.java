@@ -8,10 +8,10 @@ public class Repeat {
        If you don't specify the number of repetition it will repeat infinitely.
     */
     public static void main(String... args) {
-        exRepeatTwo();
+        egRepeatTwo();
     }
 
-    private static void exRepeatOne() {
+    private static void egRepeatOne() {
         /*
             Here Repeat will repeat its emission 2 times before the done is called.
         */
@@ -20,7 +20,7 @@ public class Repeat {
 
     }
 
-    private static void exRepeatTwo() {
+    private static void egRepeatTwo() {
         /*
             Repeating infinite times.
         */
@@ -28,7 +28,7 @@ public class Repeat {
 
     }
 
-    private static void exRepeatThree() {
+    private static void egRepeatThree() {
         /*
             Repeating infinite times.
         */

@@ -1,0 +1,9 @@
+These operator does not affect the operation or transformation in any way.
+They are like just assistance operator put inbetween any two operators.
+They assist in debugging or performing any initialisation or indication before the operation.
+
+These three operator doOnNext , doOnError and doOnComplete are like mini observer putting inbetween the observer chain.
+
+doOnNext :::
+
+1. When placed between two observer/operator.Informs us before the item reaches from one observer to the another.

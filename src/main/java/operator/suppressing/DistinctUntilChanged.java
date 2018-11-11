@@ -7,10 +7,10 @@ public class DistinctUntilChanged {
        DistinctUntilChanged : Will skip the consecutive repeated value until a new value is emitted.
     */
     public static void main(String... args) {
-        exDistinctUntilChangedOne();
+        egDistinctUntilChangedOne();
     }
 
-    private static void exDistinctUntilChangedOne() {
+    private static void egDistinctUntilChangedOne() {
         /*
             Here DistinctUntilChanged : Will skip the consecutive repeated emissions.
         */
@@ -19,7 +19,7 @@ public class DistinctUntilChanged {
         searchTextObservable.distinctUntilChanged().subscribe(System.out::println,Throwable::printStackTrace,() -> System.out.println("Done"));
     }
 
-    private static void exDistinctUntilChangedTwo() {
+    private static void egDistinctUntilChangedTwo() {
         /*
             Here DistinctUntilChanged while the equality will be on the basis of length.
         */

@@ -25,4 +25,7 @@ public class SingleObservable {
         stringObservable.first("lol").subscribe(System.out::println);
     }
 
+
+
 }
+

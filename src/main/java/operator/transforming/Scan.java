@@ -3,15 +3,17 @@ package operator.transforming;
 import io.reactivex.Observable;
 import operator.suppressing.Take;
 
+import static model.Bugs.activeBugs;
+
 public class Scan {
     /*
        Scan : Is a rolling aggregator. It will emit the element by performing the specific operation with the previous emission to it.
     */
     public static void main(String... args) {
-        exScanTwo();
+        egScanTwo();
     }
 
-    private static void exScanOne() {
+    private static void egScanOne() {
         /*
             Scan will have the both previous and current value
         */
@@ -19,7 +21,7 @@ public class Scan {
         Observable.just(0,1,2,3,4,5,6,7).scan((previous,current) -> previous + current).subscribe(System.out::println);
     }
 
-    private static void exScanTwo() {
+    private static void egScanTwo() {
         /*
             Putting comma after each element
         */
@@ -28,7 +30,7 @@ public class Scan {
 //                .subscribe(System.out::println);
 
 
-        Observable.fromIterable(SwitchIfEmpty.activeBugs()).map(bug -> bug.title).scan((aggregator,current) -> aggregator+","+current).lastElement()
+        Observable.fromIterable(activeBugs()).map(bug -> bug.title).scan((aggregator,current) -> aggregator+","+current).lastElement()
                 .subscribe(System.out::println);
 
     }

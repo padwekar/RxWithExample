@@ -5,6 +5,8 @@ import operator.suppressing.Take;
 
 import java.util.concurrent.TimeUnit;
 
+import static model.Bugs.activeBugs;
+
 public class Delay {
 
     /*
@@ -13,15 +15,15 @@ public class Delay {
     */
 
     public static void main(String... args) {
-        exDelayOne();
+        egDelayOne();
     }
 
-    private static void exDelayOne() {
+    private static void egDelayOne() {
         /*
             Here if you want to delay the emission to 2 seconds.
         */
 
-        Observable.fromIterable(SwitchIfEmpty.activeBugs()).delay(4, TimeUnit.SECONDS)
+        Observable.fromIterable(activeBugs()).delay(4, TimeUnit.SECONDS)
                 .subscribe(bug -> System.out.println(bug.title));
 
         Take.sleep(5000);
@@ -32,7 +34,7 @@ public class Delay {
          */
     }
 
-    private static void exDelayTwo() {
+    private static void egDelayTwo() {
         /*
             Here Delay
         */

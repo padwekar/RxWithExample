@@ -7,10 +7,10 @@ public class DefaultIfEmpty {
        DefaultIfEmpty : Provides an default emission if the dataset is empty
     */
     public static void main(String... args) {
-        exDefaultIfEmptyTwo();
+        egDefaultIfEmptyTwo();
     }
 
-    private static void exDefaultIfEmptyOne() {
+    private static void egDefaultIfEmptyOne() {
         /*
             Here DefaultIfEmpty
         */
@@ -18,7 +18,7 @@ public class DefaultIfEmpty {
         Observable.empty().defaultIfEmpty("Data set is empty !!!").subscribe(System.out::println);
     }
 
-    private static void exDefaultIfEmptyTwo() {
+    private static void egDefaultIfEmptyTwo() {
         /*
             Here DefaultIfEmpty skip returns empty data sets show an default value is provided to the user, Instead of empty.
         */

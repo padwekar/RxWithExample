@@ -10,10 +10,10 @@ public class Map {
        Map : Maps each emission into some specific transformation.
     */
     public static void main(String... args) {
-        exMapTwo();
+        egMapTwo();
     }
 
-    private static void exMapOne() {
+    private static void egMapOne() {
         /*
             Here Map will transform each name to greet name. It does one to one conversation
         */
@@ -21,7 +21,7 @@ public class Map {
         Observable.just("Saurabh","Healer","Tushar").map(name -> "Welcome "+ name).subscribe(System.out::println);
     }
 
-    private static void exMapTwo() {
+    private static void egMapTwo() {
         /*
             Here Map will transform each emission to 10 times of its value.
         */

@@ -4,6 +4,8 @@ import io.reactivex.Observable;
 
 import java.util.Comparator;
 
+import static model.Bugs.bugsFromBackLock;
+
 public class Sorted {
     /*
        Sorted : Used to sort the element based on Comparable<T> implemented by those objects.
@@ -11,24 +13,24 @@ public class Sorted {
        While using make your object implements Comparable Otherwise it will throw ClassCastException
     */
     public static void main(String... args) {
-        exSortedTwo();
+        egSortedTwo();
     }
 
-    private static void exSortedOne() {
+    private static void egSortedOne() {
         /*
             Here Sorted sorts the emission based on the comparable implemented.
         */
-        Observable.fromIterable(SwitchIfEmpty.bugsFromBackLock()).sorted().subscribe(bug -> System.out.println(bug.id));
+        Observable.fromIterable(bugsFromBackLock()).sorted().subscribe(bug -> System.out.println(bug.id));
         /*
           In reverse order
          */
     }
 
-    private static void exSortedTwo() {
+    private static void egSortedTwo() {
         /*
             Quickly implement comparable
         */
-        Observable.fromIterable(SwitchIfEmpty.bugsFromBackLock()).sorted((x,y) -> { if(x.id == y.id){
+        Observable.fromIterable(bugsFromBackLock()).sorted((x,y) -> { if(x.id == y.id){
             return 0;
         }
         return (x.id > y.id) ? 1 : -1;

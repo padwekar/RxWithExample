@@ -11,10 +11,10 @@ public class Distinct {
     */
 
     public static void main(String... args) {
-        exDistinctTwo();
+        egDistinctTwo();
     }
 
-    private static void exDistinctOne() {
+    private static void egDistinctOne() {
         /*
             Here Distinct will filter duplicate elements
         */
@@ -22,7 +22,7 @@ public class Distinct {
         Observable.just("Saurabh","Savi","Saurabh","Healer","Savi").distinct().subscribe(System.out::println);
     }
 
-    private static void exDistinctTwo() {
+    private static void egDistinctTwo() {
         /*
             Here Distinct inside distinct block you can override the equality definition.
         */
