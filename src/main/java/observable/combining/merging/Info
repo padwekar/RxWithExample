@@ -1,0 +1,2 @@
+What makes RxJava Powerful is the ability to merge multiple observable into one, and subscribe to each other.
+The Observable will subscribe to all of the merge source simultaneously.
