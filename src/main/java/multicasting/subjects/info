@@ -1,0 +1,8 @@
+Subjects are both observable and observer.
+
+We should know when to use them and when not to.
+
+They are like mutable variable in the world of reactive programming.
+
+They do have there place in rxprogramming but we should make sure we have exhausted all the options before using them.
+
