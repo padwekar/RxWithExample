@@ -1,0 +1,4 @@
+CONCURRENCY.SCHEDULER;
+
+Scheduler : For an observer a scheduler will provide Thread from the Thread pool , on which the emission will take place.
+When onComplete will called Operation will be disposed off the pool and Thread will be given back to Thread scheduler.
