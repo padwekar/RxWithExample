@@ -25,6 +25,9 @@ public class RefCount {
 
         integerObservable.take(5).subscribe(result -> System.out.println("First :"+result));
 
+        /*
+            What happened here is that refCount() causes the cache (and the entire chain) to dispose of and reset the moment Observer 1 is done,
+         */
         Take.sleep(3000);
 
         integerObservable.take(2).subscribe(result -> System.out.println("Second :"+result));

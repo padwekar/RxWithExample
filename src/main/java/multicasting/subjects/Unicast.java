@@ -1,10 +1,11 @@
 package multicasting.subjects;
 
+import io.reactivex.disposables.Disposable;
 import io.reactivex.subjects.UnicastSubject;
 
 public class Unicast {
     /*
-       UnicastSubject : Will buffer all the missions until any observer subscribes to it.
+       UnicastSubject : Will buffer all the emissions until any observer subscribes to it.
        And releases the emission all at once to that subscriber and clears the cache.
     */
     public static void main(String... args) {
@@ -18,12 +19,22 @@ public class Unicast {
 
         UnicastSubject<Integer> integerUnicastSubject = UnicastSubject.create();
 
+
+
         integerUnicastSubject.onNext(1);
         integerUnicastSubject.onNext(2);
         integerUnicastSubject.onNext(3);
         integerUnicastSubject.onNext(4);
 
-        integerUnicastSubject.subscribe(result -> System.out.println("Caught by 1st observer : "+ result));
+        Disposable d = integerUnicastSubject.subscribe(result -> System.out.println("Caught by 1st observer : "+ result),
+                Throwable::printStackTrace,
+                () -> System.out.println("Completed"));
+
+        integerUnicastSubject.onComplete();
+
+        d.dispose();
+
+
 
         //Throws error as it can't be subscribed again.
         //integerUnicastSubject.subscribe(result -> System.out.println("Caught by 1st observer : "+ result));
