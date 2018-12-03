@@ -7,7 +7,7 @@ import java.util.HashSet;
 
 public class Simple {
     /*
-       Simple : Is a way to binding up the emissions into batches based on certain scope and emitting
+       Sample : Is a way to binding up the emissions into batches based on certain scope and emitting
        them as list or any other collection. Batches can be fixed size, time based or time slices of other
        observables.
     */
@@ -19,7 +19,7 @@ public class Simple {
 
     private static void exBufferingOne() {
         /*
-            Simple : Here we will see fixed size buffering.Simplest overload of buffer
+            Sample : Here we will see fixed size buffering.Simplest overload of buffer
             accepts a size parameter used to decide the fixed size of batch.
         */
 
@@ -39,7 +39,7 @@ public class Simple {
 
     private static void exBufferingTwo() {
         /*
-            Simple : Cont.ex1 Of course if the
+            Sample : Cont.ex1 Of course if the
             size provided does not divide the total emissions clearly the remaining emission will
             be emitted in the final batch.
         */
@@ -58,7 +58,7 @@ public class Simple {
 
     private static void exBufferingThree(){
         /*
-            Simple : You can filter the final list whose size is not
+            Sample : You can filter the final list whose size is not
             equal to the buffer size provided.
          */
 
@@ -80,7 +80,7 @@ public class Simple {
     //BufferSupplier
     private static void exBufferingFour() {
         /*
-            Simple : Along with the size you can also pass buffer supplier which specifies the
+            Sample : Along with the size you can also pass buffer supplier which specifies the
             resultant collection you are expecting
          */
 
@@ -103,7 +103,7 @@ public class Simple {
     //Skip
     private static void exBufferingFive() {
         /*
-            Simple : Skip argument of buffer() tells number of emissions to be skipped before
+            Sample : Skip argument of buffer() tells number of emissions to be skipped before
             emitting in the next batch.
          */
 

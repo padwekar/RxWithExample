@@ -17,7 +17,7 @@ public class CompatibleObserver {
 
     }
 
-    //Simple calling on complete :)
+    //Sample calling on complete :)
     public static void completeExampleOne(){
         Completable.complete().subscribe(() -> System.out.println("Done"),Throwable::printStackTrace);
     }

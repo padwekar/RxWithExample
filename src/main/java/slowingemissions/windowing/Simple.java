@@ -4,7 +4,7 @@ import io.reactivex.Observable;
 
 public class Simple {
     /*
-       Simple : Window i
+       Sample : Window i
     */
     public static void main(String... args) {
         exSimpleOne();
@@ -12,7 +12,7 @@ public class Simple {
 
     private static void exSimpleOne() {
         /*
-            Simple :
+            Sample :
         */
 
 
@@ -23,7 +23,7 @@ public class Simple {
 
     private static void exSimpleTwo() {
         /*
-            Simple : 
+            Sample :
         */
 
 
